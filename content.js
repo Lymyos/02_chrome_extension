@@ -12,7 +12,7 @@ function addCustomButtons() {
 
     // アイコン要素を作成
     const icon = document.createElement("img");
-    icon.src = chrome.runtime.getURL("icon16.png"); // 拡張機能内のアイコンを使用
+    icon.src = chrome.runtime.getURL("hide_channel.png"); // 拡張機能内のアイコンを使用
     icon.alt = "Hide";
     icon.className = "custom-hide-icon";
 
@@ -36,15 +36,13 @@ function addCustomButtons() {
       }
     });
 
-    // ボタンをチャンネル名の横に配置
-    const channelInfo = video.querySelector("#channel-name");
-    if (channelInfo) {
-      const container = document.createElement("div");
-      container.style.display = "inline-flex";
-      container.style.alignItems = "center";
-      container.style.marginLeft = "10px"; // チャンネル名との間隔
-      container.appendChild(hideButton);
-      channelInfo.appendChild(container);
+    // サムネイル下のテキストエリアを取得
+    const textContainer = video.querySelector("#metadata-line");
+    if (textContainer) {
+      textContainer.style.display = "flex"; // ボタンを左に配置するためにフレックスに変更
+      textContainer.style.alignItems = "center";
+      textContainer.style.gap = "10px"; // ボタンと文字の間隔を設定
+      textContainer.insertAdjacentElement("afterbegin", hideButton);
     }
   });
 }

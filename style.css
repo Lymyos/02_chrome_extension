@@ -1,20 +1,18 @@
 .custom-hide-button {
-    background-color: transparent; /* 背景を透明に */
-    color: currentColor; /* 文字色を親要素に合わせる */
-    border: 2px solid currentColor; /* 中抜きの枠線 */
-    border-radius: 50%; /* 円形 */
-    width: 16px; /* ボタンのサイズ */
-    height: 16px;
-    font-size: 14px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .custom-hide-button:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* ホバー時の背景色 */
-  }
-  
+  background-color: transparent; /* 背景を透明に */
+  border: none; /* ボーダーをなくす */
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.custom-hide-icon {
+  width: 18px; /* アイコンのサイズ */
+  height: 18px;
+  opacity: 0.5; /* 初期の明るさ */
+  transition: opacity 0.2s ease; /* ホバー時のアニメーション */
+}
+
+.custom-hide-button:hover .custom-hide-icon {
+  opacity: 1; /* ホバー時に明るくする */
+}

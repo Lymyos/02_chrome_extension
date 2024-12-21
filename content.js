@@ -29,12 +29,14 @@ function addCustomButtons() {
       });
   
       // ボタンをチャンネル名の横に配置
-      const channelInfo = video.querySelector("#channel-info #text");
+      const channelInfo = video.querySelector("#channel-name");
       if (channelInfo) {
-        channelInfo.style.display = "inline-flex";
-        channelInfo.style.alignItems = "center";
-        hideButton.style.marginLeft = "10px"; // チャンネル名との間隔を調整
-        channelInfo.appendChild(hideButton);
+        const container = document.createElement("div");
+        container.style.display = "inline-flex";
+        container.style.alignItems = "center";
+        container.style.marginLeft = "10px"; // チャンネル名との間隔
+        container.appendChild(hideButton);
+        channelInfo.appendChild(container);
       }
     });
   }

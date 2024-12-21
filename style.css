@@ -1,10 +1,10 @@
 .custom-hide-button {
     background-color: transparent; /* 背景を透明に */
     color: currentColor; /* 文字色を親要素に合わせる */
-    border: 1px solid currentColor; /* 中抜き風にする */
-    border-radius: 50%; /* 円形にする */
-    width: 20px; /* ボタンの大きさを調整 */
-    height: 20px;
+    border: 2px solid currentColor; /* 中抜きの枠線 */
+    border-radius: 50%; /* 円形 */
+    width: 16px; /* ボタンのサイズ */
+    height: 16px;
     font-size: 14px;
     display: inline-flex;
     justify-content: center;
@@ -15,6 +15,6 @@
   }
   
   .custom-hide-button:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* ホバー時にわずかに背景を暗く */
+    background-color: rgba(0, 0, 0, 0.1); /* ホバー時の背景色 */
   }
   

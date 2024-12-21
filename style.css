@@ -1,0 +1,19 @@
+.custom-hide-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.custom-hide-button:hover {
+  opacity: 1;
+}

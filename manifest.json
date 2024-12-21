@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Custom Hide Button",
+  "name": "YouTube Hide Channels",
   "version": "1.0",
   "description": "Adds a button to hide recommended channels directly on YouTube.",
   "permissions": ["scripting", "activeTab"],
@@ -16,5 +16,11 @@
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["hide_channel.png"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
 }

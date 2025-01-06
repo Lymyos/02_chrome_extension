@@ -10,8 +10,8 @@
 }
 
 .custom-hide-icon {
-  width: 18px; /* アイコンのサイズ */
-  height: 18px;
+  width: 20px; /* アイコンのサイズ */
+  height: 20px;
   opacity: 0.4; /* 初期の明るさ */
   transition: opacity 0.2s ease; /* ホバー時のアニメーション */
 }
